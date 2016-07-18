@@ -38,7 +38,9 @@ wordabcd\0
 ````
 
 Note that the code compares 4 characters from buffer to 4 characters from pass.
-We can abuse this by entering ````12341234````. The layout is now:
+We can abuse this by entering ````12341234````. in effect the 4 bytes ````abcd```` is overwritten with the last 4 bytes from the buffer ````1234````. Because the first and last four bytes of buffer are the exact same the conditional evaluates to true.
+
+The layout is now:
 
 ````
 12341234\0
