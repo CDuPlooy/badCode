@@ -19,6 +19,7 @@ int main(){
             puts("You got the password!");
       else
             puts("Incorrect password!");
-
+      
+      free(buffer); //free even in bad code ;)
       return 0;
 }
