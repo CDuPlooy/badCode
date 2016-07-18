@@ -11,7 +11,7 @@ char *pass = buffer + 4;
 Another option was:
 ````c
 char *buffer = malloc(4);
-char *pass = malloc(4);
+char *pass = malloc(5); //Once again for the null terminator
 ````
 But the above assumes that the compiler place buffer and pass next to one another.
 
