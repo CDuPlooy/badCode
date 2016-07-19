@@ -47,3 +47,6 @@ The layout is now:
 ````
 
 When the code evaluates the 4 digits we find that `1234` is in fact equal to `1234`!
+
+
+Just a note , entering `abcd` as the password won't result in the correct prompt displaying. The behaviour isn't intended but the basics of the example still stands.
